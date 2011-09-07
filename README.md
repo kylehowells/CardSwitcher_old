@@ -9,7 +9,7 @@ The potential breakpoints are.
     [SBIconBadge +iconBadgeWithBadgeString:STRING];
     [SBApplication -defaultImage:NULL];
     [SBApplication -kill];
-    GSSystemHasCapability(kGSMultitaskingCapability) /// GraphicsServices.framework
+    GSSystemHasCapability(kGSMultitaskingCapability)     /// GraphicsServices.framework
     [[SBAwayController +sharedAwayController] -isLocked];
 
 ##Methods hooked
@@ -25,4 +25,5 @@ The potential breakpoints are.
     #define SBWActiveDisplayStack             [displayStacks objectAtIndex:1]
     #define SBWSuspendingDisplayStack         [displayStacks objectAtIndex:2]
     #define SBWSuspendedEventOnlyDisplayStack [displayStacks objectAtIndex:3]
+    
     #define SBActive          ([SBWActiveDisplayStack topApplication] == nil)
