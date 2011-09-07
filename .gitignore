@@ -4,3 +4,4 @@ obj
 theos
 _/*
 .DS_Store
+*.deb
